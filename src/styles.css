@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .center-icon {
+    flex: 1 1 auto;
+    text-align: center;
+    padding-top: 30px;
+    display: block;
+  }
+
+  .icon-date {
+    flex: 1 1 auto;
+    text-align: center;
+    display: block;
+    font-size: 0.8em;
+  }
+
+  .user-icon {
+    padding: 0 14px;
+    padding-top: 30px;
+    border-radius: 50%;
+  }
+
+  .tab-content {
+    overflow: hidden;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .tab-group {
+      width: 100%
+  }
+
+  .mat-toolbar {
+      background: #ffffff;
+  }
+  .mat-tab-label {
+    width: 50%;
+    font-weight: 600;
+}
+
+.headline-gridtile {
+    margin: 20px 20px 20px 20px;
+}
+
+.story-gridlist {
+    margin: 20px 20px 20px 0px;
+}

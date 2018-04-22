@@ -1,0 +1,94 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <mat-toolbar color="#ffffff">
+    <mat-toolbar-row>
+      <span class="center-icon">
+        <img src="../assets/icon.png" alt="Main Icon" width="200px" height="60px">
+      </span>
+      <span class="user-icon">
+        <img src="../assets/icon.png" alt="Main Icon" width="20px" height="20px">
+      </span>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row>
+      <span class="icon-date">{{ account }}</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  
+  <form #signupForm="ngForm" (ngSubmit)="addHistory(signupForm)">
+
+      <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="5%" fxLayoutAlign="center">
+        <div fxFlex="50%">
+          <mat-form-field>
+            <input matInput placeholder="Your Company" width="100%" type="text" name="company" id="company" ngModel>
+          </mat-form-field>
+        </div>
+        <div fxFlex="50%">
+          <mat-form-field>
+            <input matInput placeholder="Product Batch ID" width="100%" type="text" name="batchId" id="batchId" ngModel>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="5%" fxLayoutAlign="center">
+        <div fxFlex="33.3%">
+          <mat-form-field class="example-full-width">
+            <input matInput [matDatepicker]="picker" placeholder="Choose a date" name="date1" id="date1" ngModel>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker touchUi="true" #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div fxFlex="33.3%">
+          <mat-form-field>
+            <input matInput placeholder="Process/Stage" width="100%" type="text" name="process1" id="process1" ngModel>
+          </mat-form-field>
+        </div>
+        <div fxFlex="33.3%">
+          <mat-form-field>
+            <input matInput placeholder="Chemicals Used" width="100%" type="text" name="chem1" id="chem1" ngModel>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="5%" fxLayoutAlign="center">
+        <div fxFlex="33.3%">
+          <mat-form-field class="example-full-width">
+            <input matInput [matDatepicker]="picker1" placeholder="Choose a date" name="date2" id="date2" ngModel>
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker touchUi="true" #picker1></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div fxFlex="33.3%">
+          <mat-form-field>
+            <input matInput placeholder="Process/Stage" width="100%" type="text" name="process2" id="process2" ngModel>
+          </mat-form-field>
+        </div>
+        <div fxFlex="33.3%">
+          <mat-form-field>
+            <input matInput placeholder="Chemicals Used" width="100%" type="text" name="chem2" id="chem2" ngModel>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="5%" fxLayoutAlign="center">
+        <div fxFlex="33.3%">
+          <mat-form-field class="example-full-width">
+            <input matInput [matDatepicker]="picker3" placeholder="Choose a date" name="date3" id="date3" ngModel>
+            <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+            <mat-datepicker touchUi="true" #picker3></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div fxFlex="33.3%">
+          <mat-form-field>
+            <input matInput placeholder="Process/Stage" width="100%" type="text" name="process3" id="process3" ngModel>
+          </mat-form-field>
+        </div>
+        <div fxFlex="33.3%">
+          <mat-form-field>
+            <input matInput placeholder="Chemicals Used" width="100%" type="text" name="chem3" id="chem3" ngModel>
+          </mat-form-field>
+        </div>
+      </div>
+        <div class="center_buton">
+          <button type="submit" mat-raised-button color="primary">Submit</button>
+        </div>
+      </form>
+      
+  </div>

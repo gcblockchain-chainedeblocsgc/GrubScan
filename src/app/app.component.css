@@ -1,0 +1,17 @@
+  .container {
+      margin: auto;
+      justify-content: center;
+      max-width: 960px;
+  }
+
+.mat-form-field {
+    width: 100%;
+}
+
+.center_buton {
+    margin: auto;
+    margin-top: 35px;
+    justify-content: center;
+    text-align: center;
+
+}
